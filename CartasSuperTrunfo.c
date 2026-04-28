@@ -43,8 +43,9 @@ printf("Desidade populacional é: %f \n", densidade_populacional1);
 float pib_per_capita1 = (float) populacao1 / pib1;
 printf("Pib per capita é: %f \n", pib_per_capita1);
 
+float super_poder1 = populacao1 + area_em_km1 + ponto_turisticos1 + (1 / densidade_populacional1)+ pib1;
+printf("Super poder é: %.2f \n", super_poder1);
 
-printf("\n");
 
 //Carta 2
 printf("Digite o codigo da carta2 (B02):");
@@ -73,6 +74,15 @@ printf("Desidade populacional é: %f \n", densidade_populacional2);
 
 float pib_per_capita2 = (float) populacao2 / pib2;
 printf("Pib per capita é: %f \n", pib_per_capita2);
+
+float super_poder2 = populacao2 + area_em_km2 + ponto_turisticos2 + (1 / densidade_populacional2)+ pib2;
+printf("Super poder é: %.2f \n", super_poder2);
+
+unsigned int resultado = super_poder1 > super_poder2;
+printf("A carta1 > que a Carta2: %u \n", resultado);
+
+
+
 
 
 
